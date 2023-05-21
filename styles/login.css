@@ -1,0 +1,30 @@
+.login-form {
+    border: 1px solid var(--neutral-800);
+    border-radius: .4em;
+    color: var(--baby-blue);
+}
+
+.btn {
+    background-color: var(--violet-400);
+    border: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--violet-400);
+    filter: brightness(85%);
+}
+
+.custom-link {
+    color: var(--yellow);
+}
+
+.login-input {
+    outline: none;
+    border: none;
+    background-color: var(--neutral-200);
+}
+
+#login {
+    display: none;
+}

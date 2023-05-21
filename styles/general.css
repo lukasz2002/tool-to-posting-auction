@@ -1,0 +1,28 @@
+:root {
+    --neutral-1000: #24292e;
+    --neutral-900: #383f45;
+    --neutral-800: #454c52;
+    --neutral-700: #596066;
+    --neutral-600: #676e76;
+    --neutral-500: #7f8790;
+    --neutral-400: #9ea5ad;
+    --neutral-300: #ced2d6;
+    --neutral-200: #e5e7ea;
+    --neutral-100: #f6f7f9;
+    --dark-red: #8f0031;
+    --yellow: rgb(247, 155, 25);
+    --sea-green: rgb(2, 143, 163);
+    --baby-blue: rgb(0, 168, 204);
+    --violet: rgb(145, 25, 142);
+    --violet-400: #c054be;
+}
+
+body {
+    background-color: var(--neutral-1000);
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+html, body {
+    height: 100%;
+}
