@@ -1,0 +1,24 @@
+.main-container {
+    color: var(--baby-blue);
+}
+
+.header {
+    border-bottom: 2px solid var(--neutral-800); 
+}
+
+.side-bar {
+    border-right: 2px solid var(--neutral-800);  
+}
+
+.nav-section {
+    color: var(--yellow);
+}
+
+.custom-border-bottom {
+    border-bottom: 2px dotted var(--neutral-400)
+}
+
+.nav-element:hover {
+    background-color: var(--neutral-900);
+    cursor: pointer;
+}
