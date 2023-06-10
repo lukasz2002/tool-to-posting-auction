@@ -11,35 +11,154 @@
 </head>
 <body>
     
-    <div class="main-container container-fluid h-100 d-flex flex-column">
-        <div class="header row align-items-center">
+    <div class="main-container container-fluid h-100">
+        <div class="header row align-items-center p-2">
             <div class="col-6 fs-2">
-                Tool to selling shit
+                SaleBoss
             </div>
-            <div class="col-6 text-end fs-4">
-                Account name
-            </div>
-        </div>
-        <div class="row flex-fill">
-            <div class="nav-section col-2 side-bar text-center pt-2 text-uppercase d-flex flex-column">
-                <h5 class="nav-element custom-border-bottom py-3 px-4">
+            <div class="col-6 fs-4 d-flex flex-row justify-content-end">
+                <h5 class="nav-element py-3 px-4 rounded-3">
                     dodaj produkt
                 </h5>
-                <h5 class="nav-element py-3 px-4">
+                <h5 class="nav-element py-3 px-4 rounded-3">
                     przejrzyj produkty
                 </h5>
             </div>
-            <div class="col-10">
-                <div class="row">
-                    <div class="col-12 py-2 ps-3">
-                        <form>
-                            <input type="radio" id="olx" name="shop-name" value="olx">
-                            <label for="olx" class="me-4">olx</label>
-                            <input type="radio" id="allegro-lokalnie" name="shop-name" value="allegro-lokalnie">
-                            <label for="allegro-lokalnie">allegro</label>
-                        </form>
+        </div>
+        <div class="row d-flex flex-column align-items-center">
+            <div class="col-6 d-flex flex-column pt-2">
+                <label for="ad-title">Tytuł</label>
+                <input type="text" id="ad-title" class="custom-inputs px-2 py-1 rounded-2 mt-1" placeholder="np. iPhone 11 na gwarancji">
+                <label for="ad-description">Opis</label>
+                <textarea name="" maxlength="9000" id="ad-description" cols="30" rows="10" class="custom-inputs rounded-2 px-2 py-1 mt-1" placeholder="Wpisz te informacje, które byłyby ważne dla Ciebie podczas przeglądania takiego ogłoszenia"></textarea>
+                <div class="ad-description-warning invisible">d</div>
+                <div class="row d-flex justify-content-between mb-3">
+                    <div class="col-6 ad-description-remain">
+                        Wpisz jeszcze przynajmniej 80 znaków
+                    </div>
+                    <div class="col-6 ad-description-counter text-end">
+                        0/9000
                     </div>
                 </div>
+<!-- stan produktu -->
+                <label class="test mb-1" for="">Stan przedmiotu</label>
+                <div class="row d-flex flex-row justify-content-evenly">
+                    <div class="product-state custom-border rounded-3 col-3 py-2">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="custom-color-violet mb-1">
+                                    Używany
+                                </h5>
+                            </div>
+                            <div class="product-checked col-3 text-end">
+
+                            </div>
+                        </div>
+                        <p class="custom-color-violet-400">
+                            Widoczne ślady używania lub uszkodzenia, które zostały uwzględnione w opisie tego przedmiotu i/lub na zdjęciach. 
+                        </p>
+                    </div>
+                    <div class="product-state custom-border rounded-3 col-3 py-2">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="custom-color-violet mb-1">
+                                    Bardzo dobry
+                                </h5>
+                            </div>
+                            <div class="product-checked col-3 text-end">
+                                
+                            </div>
+                        </div>
+                        <p class="custom-color-violet-400">
+                            W bardzo dobrym stanie technicznym i wizualnym. Nie nosi śladów używania lub są one znikome.
+                        </p>
+                    </div>
+                    <div class="product-state custom-border rounded-3 col-3 py-2">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="custom-color-violet mb-1">
+                                    Nowy
+                                </h5>
+                            </div>
+                            <div class="product-checked col-3 text-end">
+
+                            </div>
+                        </div>
+                        <p class="custom-color-violet-400">
+                            Fabrycznie nowy, nieużywany, nieuszkodzony, zapakowany w oryginalne opakowanie od producenta.
+                        </p>
+                    </div>
+                </div>
+<!-- wystaw jako -->
+                <label class="test mb-1" for="">Wystaw jako</label>
+                <div class="row d-flex flex-row justify-content-evenly">
+                    <div class="sell-as custom-border rounded-3 col-3 py-2">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="custom-color-violet mb-1">
+                                    Kup teraz
+                                </h5>
+                            </div>
+                            <div class="product-checked col-3 text-end">
+                                
+                            </div>
+                        </div>
+                        <p class="custom-color-violet-400">
+                            Widoczne na Allegro Lokalnie i Allegro<br>
+                            Kupujący mogą zapłacić online
+                        </p>
+                    </div>
+                    <div class="sell-as custom-border rounded-3 col-3 py-2">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="custom-color-violet mb-1">
+                                    Licytacja
+                                </h5>
+                            </div>
+                            <div class="product-checked col-3 text-end">
+                                
+                            </div>
+                        </div>
+                        <p class="custom-color-violet-400">
+                            Widoczna przez 7 dni na Allegro Lokalnie i Allegro<br>
+                            Kupujący mogą zapłacić online
+                        </p>
+                    </div>
+                    <div class="sell-as custom-border rounded-3 col-3 py-2">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="custom-color-violet mb-1">
+                                    Darmowe ogłoszenie
+                                </h5>
+                            </div>
+                            <div class="product-checked col-3 text-end">
+
+                            </div>
+                        </div>
+                        <p class="custom-color-violet-400">
+                            Widoczne na Allegro Lokalnie i Allegro<br>
+                            Sposób zapłaty sam ustalasz z kupującym
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <div class="text-center">
+                            <label class="d-block" for="product-price">Cena produktu</label>
+                        </div>
+                        <input id="product-price" class="num-input d-block" type="number" placeholder="0,00">
+                        <input id="to-negotiation" type="checkbox">
+                        <label for="to-negotiation">do negocjacji</label>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <label for="produckt-num" class="d-block">Liczba Przedmiotów</label>    
+                        </div>
+                        <input id="produckt-num" class="num-input" type="number" placeholder="1">
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

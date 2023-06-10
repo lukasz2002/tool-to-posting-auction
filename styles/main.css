@@ -18,7 +18,48 @@
     border-bottom: 2px dotted var(--neutral-400)
 }
 
+.nav-element {
+    color: var(--yellow)
+}
+
 .nav-element:hover {
     background-color: var(--neutral-900);
     cursor: pointer;
+}
+
+.custom-inputs {
+    border: none;
+    outline: none;
+    background-color: var(--neutral-200);
+    color: var(--neutral-600);
+}
+
+.ad-description-warning {
+    color: var(--dark-red)
+}
+
+.custom-border {
+    border: 2px solid var(--neutral-400)
+}
+
+.custom-color-violet-400 {
+    color: var(--violet-400)
+}
+
+.custom-color-violet {
+    color: var(--violet)
+}
+
+.custom-color-yellow {
+    color: var(--yellow)
+}
+
+.custom-border-yellow {
+    border: 2px solid var(--yellow);
+}
+
+.product-state,
+.sell-as {
+    cursor: pointer;
+    user-select: none;
 }
